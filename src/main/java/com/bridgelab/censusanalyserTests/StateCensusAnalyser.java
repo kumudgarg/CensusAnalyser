@@ -41,12 +41,15 @@ public class StateCensusAnalyser {
                 count += 1;
             }
         }
-
         catch (NoSuchFileException e){
             throw new CSVUserException(CSVUserException.ExceptionType.FILE_NOT_FOUND,"Such type file doesn't exist",e.getCause());
-        } catch (IOException e) {
+        }catch (RuntimeException e){
+            throw new CSVUserException(CSVUserException.ExceptionType.BINDING_PROBLEM_AT_RAUNTIME,"binding of file to failed",e.getCause());
+        }
+        catch (IOException e) {
             e.printStackTrace();
         }
+
         return count;
 
     }
