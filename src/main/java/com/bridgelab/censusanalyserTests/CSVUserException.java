@@ -2,7 +2,7 @@ package com.bridgelab.censusanalyserTests;
 
 public class CSVUserException extends Exception {
     enum ExceptionType{
-        FILE_NOT_FOUND,BINDING_PROBLEM_AT_RAUNTIME;
+        FILE_NOT_FOUND,BINDING_PROBLEM_AT_RAUNTIME,NULL_DATA_FOUND;
     }
     ExceptionType type;
 

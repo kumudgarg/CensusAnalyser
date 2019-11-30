@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81781555-31bf-4f56-80b9-c7aef4252e84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Basic Programs.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/StateCensusData.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/delimeterCsv.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,15 +14,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/bridgelab/censusanalyserTests/CSVUserException$ExceptionType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/bridgelab/censusanalyserTests/CSVUserException$ExceptionType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/bridgelab/censusanalyserTests/StateCensusAnalyser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/bridgelab/censusanalyserTests/StateCensusAnalyser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/bridgelab/censusanalyserTests/StateCensusTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/bridgelab/censusanalyserTests/StateCensusTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.bridgelab.censusanalyserTests.StateCensusTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.bridgelab.censusanalyserTests.StateCensusTests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.bridgelab.censusanalyserTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.bridgelab.censusanalyserTests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.bridgelab.censusanalyserTests.StateCensusTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.bridgelab.censusanalyserTests.StateCensusTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelab/censusanalyserTests/CSVUserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelab/censusanalyserTests/CSVUserException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelab/censusanalyserTests/StateCensusAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelab/censusanalyserTests/StateCensusAnalyser.java" afterDir="false" />
@@ -79,13 +75,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.StateCensusTests.givenWrongFileType_ShouldThrowFileNotFoundException">
+  <component name="RunManager" selected="Gradle.StateCensusTests.givenWrongDelimer_ShouldThrowRunTimeException">
     <configuration name="StateCensusTests.givenNumberOfRecords_ChecksWhetherMatchesOrNot_" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;com.bridgelab.censusanalyserTests.StateCensusTests.givenNumberOfRecords_ChecksWhetherMatchesOrNot_&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="StateCensusTests.givenWrongDelimer_ShouldThrowRunTimeException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.bridgelab.censusanalyserTests.StateCensusTests.givenWrongDelimer_ShouldThrowRunTimeException&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -162,6 +178,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.StateCensusTests.givenWrongDelimer_ShouldThrowRunTimeException" />
         <item itemvalue="Gradle.StateCensusTests.givenWrongFileType_ShouldThrowFileNotFoundException" />
         <item itemvalue="Gradle.StateCensusTests.givenWrongFileName_ShouldThrowNoSuchFileException" />
         <item itemvalue="Gradle.StateCensusTests.givenNumberOfRecords_ChecksWhetherMatchesOrNot_" />
