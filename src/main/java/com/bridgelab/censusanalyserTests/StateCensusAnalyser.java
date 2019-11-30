@@ -4,17 +4,25 @@ import com.opencsv.CSVReader;
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
 import java.nio.file.Paths;
 import java.util.Iterator;
 
 public class StateCensusAnalyser {
-    private static final String STATE_CODE_CSV_FILE_PATH = "/home/admin165/Desktop/censusAnalyser/src/main/resources/StateCode.csv";
+    String STATE_CODE_CSV_FILE_PATH ;
+
+    public StateCensusAnalyser(String STATE_CODE_CSV_FILE_PATH) {
+        this.STATE_CODE_CSV_FILE_PATH = STATE_CODE_CSV_FILE_PATH;
+    }
+
     int count = 0;
 
-    public int checkNumberOfRecords() {
+
+    public int checkNumberOfRecords() throws CSVUserException {
         try (
                 Reader reader = Files.newBufferedReader(Paths.get(STATE_CODE_CSV_FILE_PATH));
         ) {
@@ -32,6 +40,10 @@ public class StateCensusAnalyser {
                 System.out.println("==========================");
                 count += 1;
             }
+        }
+
+        catch (NoSuchFileException e){
+            throw new CSVUserException(CSVUserException.ExceptionType.FILE_NOT_FOUND,"Such type file doesn't exist",e.getCause());
         } catch (IOException e) {
             e.printStackTrace();
         }
