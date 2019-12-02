@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelab.censusanalyserTests.StateCensusTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-02T09:01:47" hostname="admin165-desktop" time="0.01">
+<testsuite name="com.bridgelab.censusanalyserTests.StateCensusTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-02T11:58:03" hostname="admin105-desktop" time="0.013">
   <properties/>
-  <testcase name="givenWrongStateCensusName_ShouldThrowNoSuchFileException" classname="com.bridgelab.censusanalyserTests.StateCensusTests" time="0.01"/>
+  <testcase name="givenWrongFileType_ShouldThrowRunTimeException" classname="com.bridgelab.censusanalyserTests.StateCensusTests" time="0.013"/>
   <system-out><![CDATA[in nosuch file
 ]]></system-out>
   <system-err><![CDATA[com.bridgelab.censusanalyserTests.CSVUserException: Such type file doesn't exist
-	at com.bridgelab.censusanalyserTests.StateCensusAnalyser.checkNumberOfRecordsOfSateCensus(StateCensusAnalyser.java:75)
-	at com.bridgelab.censusanalyserTests.StateCensusTests.givenWrongStateCensusName_ShouldThrowNoSuchFileException(StateCensusTests.java:73)
+	at com.bridgelab.censusanalyserTests.StateCensusAnalyser.checkNumberOfRecords(StateCensusAnalyser.java:45)
+	at com.bridgelab.censusanalyserTests.StateCensusTests.givenWrongFileType_ShouldThrowRunTimeException(StateCensusTests.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

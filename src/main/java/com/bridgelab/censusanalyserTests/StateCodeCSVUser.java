@@ -13,7 +13,7 @@ public class StateCodeCSVUser {
     public StateCodeCSVUser() {
     }
 
-    @CsvBindByName(column = "SrNo")
+    @CsvBindByName(column = "SrNo",required = true)
     private String SrNo;
 
     @CsvBindByName(column = "StateName ")

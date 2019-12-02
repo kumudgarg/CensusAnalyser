@@ -31,7 +31,7 @@ public class StateCensusTests {
             StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
             int checkNumberOfRecords = stateCensusAnalyser.checkNumberOfRecords("/home/admin165/Desktop/censusAnalyser/src/main/resources/StateCensusData.csv");
         } catch (CSVUserException e) {
-            Assert.assertEquals("delimeter problem or file type problem or header not found or binding data issue", e.getMessage());
+            Assert.assertEquals("Such type file doesn't exist", e.getMessage());
             e.printStackTrace();
 
         }
@@ -74,6 +74,17 @@ public class StateCensusTests {
         } catch (CSVUserException e) {
             e.printStackTrace();
             Assert.assertEquals("Such type file doesn't exist", e.getMessage());
+        }
+    }
+
+    @Test
+    public void givenWrongFileType_ShouldThrowNoSuchFileException() {
+        try {
+            StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
+            int checkNumberOfRecords = stateCensusAnalyser.checkNumberOfRecordsOfSateCensus("/home/admin105/Desktop/CensusAnalyser/src/main/resources/StateCode.csv");
+        } catch (CSVUserException e) {
+            Assert.assertEquals("delimeter problem or file type problem or header not found or binding data issue", e.getMessage());
+            e.printStackTrace();
         }
     }
 

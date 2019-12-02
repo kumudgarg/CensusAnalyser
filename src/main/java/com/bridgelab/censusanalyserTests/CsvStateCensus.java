@@ -4,10 +4,10 @@ import com.opencsv.bean.CsvBindByName;
 
 public class CsvStateCensus {
 
-    @CsvBindByName(column = "State")
+    @CsvBindByName(column = "State",required = true)
     private String State;
 
-    @CsvBindByName(column = "Population")
+    @CsvBindByName(column = "Population" ,required = true)
     private String Population;
 
     @CsvBindByName(column = "AreaInSqKm")

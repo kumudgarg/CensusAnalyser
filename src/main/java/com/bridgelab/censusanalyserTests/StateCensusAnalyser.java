@@ -72,9 +72,12 @@ public class StateCensusAnalyser {
             }
         } catch (NoSuchFileException e) {
             System.out.println("in nosuch file");
-            throw new CSVUserException(CSVUserException.ExceptionType.FILE_NOT_FOUND, "Such type file doesn't exist", e.getCause());
+            throw new CSVUserException(CSVUserException.ExceptionType.FILE_NOT_FOUND,"Such type file doesn't exist");
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (RuntimeException e) {
+            System.out.println("in runtime");
+            throw new CSVUserException(CSVUserException.ExceptionType.NULL_DATA_FOUND, "delimeter problem or file type problem or header not found or binding data issue", e.getCause());
         }
         return count;
     }
