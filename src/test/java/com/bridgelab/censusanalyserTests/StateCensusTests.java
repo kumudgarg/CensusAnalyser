@@ -88,5 +88,16 @@ public class StateCensusTests {
         }
     }
 
+    @Test
+    public void givenWrongDelimerInCensusData_ShouldReturnWrongDelimiterException() throws CSVUserException {
+        try {
+            StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
+            int checkNumberOfRecords = stateCensusAnalyser.checkNumberOfRecords("/home/admin105/Desktop/CensusAnalyser/src/main/resources/CensusDelimiter.csv");
+        } catch (CSVUserException e) {
+            e.printStackTrace();
+            Assert.assertEquals("delimeter problem or file type problem or header not found or binding data issue", e.getMessage());
+        }
+    }
+
 
 }

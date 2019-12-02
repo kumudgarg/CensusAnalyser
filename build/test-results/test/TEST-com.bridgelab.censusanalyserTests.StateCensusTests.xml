@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelab.censusanalyserTests.StateCensusTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-02T11:58:03" hostname="admin105-desktop" time="0.013">
+<testsuite name="com.bridgelab.censusanalyserTests.StateCensusTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-02T12:04:15" hostname="admin105-desktop" time="0.124">
   <properties/>
-  <testcase name="givenWrongFileType_ShouldThrowRunTimeException" classname="com.bridgelab.censusanalyserTests.StateCensusTests" time="0.013"/>
-  <system-out><![CDATA[in nosuch file
+  <testcase name="givenWrongDelimerInCensusData_ShouldReturnWrongDelimiterException" classname="com.bridgelab.censusanalyserTests.StateCensusTests" time="0.124"/>
+  <system-out><![CDATA[in runtime
 ]]></system-out>
-  <system-err><![CDATA[com.bridgelab.censusanalyserTests.CSVUserException: Such type file doesn't exist
-	at com.bridgelab.censusanalyserTests.StateCensusAnalyser.checkNumberOfRecords(StateCensusAnalyser.java:45)
-	at com.bridgelab.censusanalyserTests.StateCensusTests.givenWrongFileType_ShouldThrowRunTimeException(StateCensusTests.java:32)
+  <system-err><![CDATA[com.bridgelab.censusanalyserTests.CSVUserException: delimeter problem or file type problem or header not found or binding data issue
+	at com.bridgelab.censusanalyserTests.StateCensusAnalyser.checkNumberOfRecords(StateCensusAnalyser.java:51)
+	at com.bridgelab.censusanalyserTests.StateCensusTests.givenWrongDelimerInCensusData_ShouldReturnWrongDelimiterException(StateCensusTests.java:95)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,5 +54,11 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.opencsv.exceptions.CsvRequiredFieldEmptyException: Header is missing required fields [SRNO]. The list of headers encountered is [State            -Population-AreaInSqKm-DensityPerSqKm].
+	at com.opencsv.bean.HeaderColumnNameMappingStrategy.captureHeader(HeaderColumnNameMappingStrategy.java:90)
+	at com.opencsv.bean.CsvToBean.prepareToReadInput(CsvToBean.java:493)
+	at com.opencsv.bean.CsvToBean.iterator(CsvToBean.java:514)
+	at com.bridgelab.censusanalyserTests.StateCensusAnalyser.checkNumberOfRecords(StateCensusAnalyser.java:33)
+	... 48 more
 ]]></system-err>
 </testsuite>
