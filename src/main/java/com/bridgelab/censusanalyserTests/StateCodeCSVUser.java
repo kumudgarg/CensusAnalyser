@@ -3,6 +3,15 @@ package com.bridgelab.censusanalyserTests;
 import com.opencsv.bean.CsvBindByName;
 
 public class StateCodeCSVUser {
+    public StateCodeCSVUser(String srNo, String stateName, String TIN, String stateCode) {
+        SrNo = srNo;
+        StateName = stateName;
+        this.TIN = TIN;
+        StateCode = stateCode;
+    }
+
+    public StateCodeCSVUser() {
+    }
 
     @CsvBindByName(column = "SrNo")
     private String SrNo;
