@@ -66,5 +66,16 @@ public class StateCensusTests {
 
     }
 
+    @Test
+    public void givenWrongStateCensusName_ShouldThrowNoSuchFileException() {
+        try {
+            StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
+            int checkNumberOfRecords = stateCensusAnalyser.checkNumberOfRecordsOfSateCensus("/home/admin165/Desktop/censusAnalyser/src/main/resources/StateCensusData123.csv");
+        } catch (CSVUserException e) {
+            e.printStackTrace();
+            Assert.assertEquals("Such type file doesn't exist", e.getMessage());
+        }
+    }
+
 
 }

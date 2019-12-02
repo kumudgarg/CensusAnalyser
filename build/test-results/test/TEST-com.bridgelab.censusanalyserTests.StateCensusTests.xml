@@ -1,152 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelab.censusanalyserTests.StateCensusTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-02T07:49:19" hostname="admin165-desktop" time="0.091">
+<testsuite name="com.bridgelab.censusanalyserTests.StateCensusTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-02T09:01:47" hostname="admin165-desktop" time="0.01">
   <properties/>
-  <testcase name="givenNumOfRecords_ChecksWhetherMatchesOrNot_" classname="com.bridgelab.censusanalyserTests.StateCensusTests" time="0.091"/>
-  <system-out><![CDATA[State : Uttar Pradesh    
-Population : 199812341 
-getAreaInSqKm : 240928    
-DensityPerSqKm : 828
-==========================
-State : Maharashta       
-Population : 112372972 
-getAreaInSqKm : 307713    
-DensityPerSqKm : 365
-==========================
-State : Bihar            
-Population : 103804637 
-getAreaInSqKm : 94163     
-DensityPerSqKm : 1102
-==========================
-State : West Bengal      
-Population : 91347736  
-getAreaInSqKm : 88752     
-DensityPerSqKm : 1029
-==========================
-State : Madhya Pradesh   
-Population : 72597565  
-getAreaInSqKm : 308245    
-DensityPerSqKm : 236
-==========================
-State : Tamil Nadu       
-Population : 72138958  
-getAreaInSqKm : 130058    
-DensityPerSqKm : 555
-==========================
-State : Rajasthan        
-Population : 68621012  
-getAreaInSqKm : 342239    
-DensityPerSqKm : 201
-==========================
-State : Karnataka        
-Population : 61130704  
-getAreaInSqKm : 191791    
-DensityPerSqKm : 319
-==========================
-State : Gujarat          
-Population : 60383628  
-getAreaInSqKm : 196024    
-DensityPerSqKm : 308
-==========================
-State : Andhra Pradesh   
-Population : 49386799  
-getAreaInSqKm : 162968    
-DensityPerSqKm : 303
-==========================
-State : Odisha           
-Population : 41947358  
-getAreaInSqKm : 155707    
-DensityPerSqKm : 269
-==========================
-State : Telangana        
-Population : 35286757  
-getAreaInSqKm : 114840    
-DensityPerSqKm : 307
-==========================
-State : Kerala           
-Population : 33387677  
-getAreaInSqKm : 38863     
-DensityPerSqKm : 859
-==========================
-State : Jharkhand        
-Population : 32966238  
-getAreaInSqKm : 79714     
-DensityPerSqKm : 414
-==========================
-State : Assam            
-Population : 31169272  
-getAreaInSqKm : 78438     
-DensityPerSqKm : 397
-==========================
-State : Punjab           
-Population : 27704236  
-getAreaInSqKm : 50362     
-DensityPerSqKm : 550
-==========================
-State : Chattisgarh      
-Population : 25540196  
-getAreaInSqKm : 135191    
-DensityPerSqKm : 189
-==========================
-State : Haryana          
-Population : 25353081  
-getAreaInSqKm : 44212     
-DensityPerSqKm : 573
-==========================
-State : Jammu and Kashmir
-Population : 12548926  
-getAreaInSqKm : 222236    
-DensityPerSqKm : 57
-==========================
-State : Uttarakhand      
-Population : 10116752  
-getAreaInSqKm : 53483     
-DensityPerSqKm : 189
-==========================
-State : Himachal Pradesh 
-Population : 6864602   
-getAreaInSqKm : 55673     
-DensityPerSqKm : 123
-==========================
-State : Tripura          
-Population : 3671032   
-getAreaInSqKm : 10486     
-DensityPerSqKm : 350
-==========================
-State : Meghalaya        
-Population : 2964007   
-getAreaInSqKm : 22429     
-DensityPerSqKm : 132
-==========================
-State : Manipur          
-Population : 2721756   
-getAreaInSqKm : 22327     
-DensityPerSqKm : 122
-==========================
-State : Nagaland         
-Population : 1980602   
-getAreaInSqKm : 16579     
-DensityPerSqKm : 119
-==========================
-State : Goa              
-Population : 1457723   
-getAreaInSqKm : 3702      
-DensityPerSqKm : 394
-==========================
-State : Arunachal Pradesh
-Population : 1382611				
-getAreaInSqKm : 										
-DensityPerSqKm : 
-==========================
-State : Mizoram          
-Population : 1091014   
-getAreaInSqKm : 21081     
-DensityPerSqKm : 52
-==========================
-State : Sikkim           
-Population : 607688    
-getAreaInSqKm : 7096      
-DensityPerSqKm : 86
-==========================
+  <testcase name="givenWrongStateCensusName_ShouldThrowNoSuchFileException" classname="com.bridgelab.censusanalyserTests.StateCensusTests" time="0.01"/>
+  <system-out><![CDATA[in nosuch file
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[com.bridgelab.censusanalyserTests.CSVUserException: Such type file doesn't exist
+	at com.bridgelab.censusanalyserTests.StateCensusAnalyser.checkNumberOfRecordsOfSateCensus(StateCensusAnalyser.java:75)
+	at com.bridgelab.censusanalyserTests.StateCensusTests.givenWrongStateCensusName_ShouldThrowNoSuchFileException(StateCensusTests.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></system-err>
 </testsuite>
