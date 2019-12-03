@@ -34,7 +34,8 @@ public class StateCensusAnalyser {
                 censusDataList.add(csvObj);
                 count += 1;
             }
-            sortByState(censusDataList);
+            sortByStatePopulation(censusDataList);
+            //sortByState(censusDataList);
             sortedCensusDataIntoJson(censusDataList);
 
         } catch (CSVUserException | IOException e) {
@@ -65,7 +66,7 @@ public class StateCensusAnalyser {
     }
 
     public void sortByState(List unsortCensusDataList) {
-        unsortCensusDataList.sort(Comparator.comparing(CsvStateCensus::getState));
+        unsortCensusDataList.sort(Comparator.comparing(CsvStateCensus::getPopulation));
     }
 
     public void sortedCensusDataIntoJson(List sortedCensusDataList) throws IOException {
@@ -76,6 +77,11 @@ public class StateCensusAnalyser {
         writer.close();
 
     }
+
+    public void sortByStatePopulation(List unsortCensusDataList) {
+        unsortCensusDataList.sort(Comparator.comparing(CsvStateCensus::getState).reversed());
+    }
+
 
 }
 

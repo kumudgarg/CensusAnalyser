@@ -5,7 +5,7 @@
       <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/bridgelab/censusanalyserTests/StateCensusData.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/resources/main/sortedCensusData.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/bridgelab/censusanalyserTests/StateCensusData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sortedCensusData.json" afterDir="false" />
+      <change afterPath="$PROCT_DIR$/src/main/resources/sortedCensusData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -19,23 +19,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/bridgelab/censusanalyserTests/CsvStateCensus.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/bridgelab/censusanalyserTests/CsvStateCensus.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/bridgelab/censusanalyserTests/StateCensusAnalyser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/bridgelab/censusanalyserTests/StateCensusAnalyser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/bridgelab/censusanalyserTests/StateCodeCSVUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/bridgelab/censusanalyserTests/StateCodeCSVUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/bridgelab/censusanalyserTests/StateCensusTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/bridgelab/censusanalyserTests/StateCensusTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.bridgelab.censusanalyserTests.StateCensusTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.bridgelab.censusanalyserTests.StateCensusTests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.bridgelab.censusanalyserTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.bridgelab.censusanalyserTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/StateCensusData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/StateCensusData.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/StateCode.csv" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/StateCode.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/sortedCensusData.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/sortedCensusData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.bridgelab.censusanalyserTests.StateCensusTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.bridgelab.censusanalyserTests.StateCensusTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelab/censusanalyserTests/CsvStateCensus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelab/censusanalyserTests/CsvStateCensus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelab/censusanalyserTests/StateCensusAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelab/censusanalyserTests/StateCensusAnalyser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelab/censusanalyserTests/StateCodeCSVUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelab/censusanalyserTests/StateCodeCSVUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/StateCensusData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StateCensusData.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/StateCode.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StateCode.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelab/censusanalyserTests/StateCensusTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelab/censusanalyserTests/StateCensusTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sortedCensusData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sortedCensusData.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +91,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.StateCensusTests.givenWrongFileType_ShouldThrowNoSuchFileException">
+  <component name="RunManager" selected="Gradle.StateCensusTests.givenNumOfRecords_ChecksWhetherMatchesOrNot_">
+    <configuration name="StateCensusTests.givenNumOfRecords_ChecksWhetherMatchesOrNot_" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.bridgelab.censusanalyserTests.StateCensusTests.givenNumOfRecords_ChecksWhetherMatchesOrNot_&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="StateCensusTests.givenWrongDelimerInCensusData_ShouldReturnWrongDelimiterException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -180,33 +192,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="StateCensusTests.givenWrongStateCensusName_ShouldThrowNoSuchFileException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.bridgelab.censusanalyserTests.StateCensusTests.givenWrongStateCensusName_ShouldThrowNoSuchFileException&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.StateCensusTests.givenNumOfRecords_ChecksWhetherMatchesOrNot_" />
         <item itemvalue="Gradle.StateCensusTests.givenWrongFileType_ShouldThrowNoSuchFileException" />
         <item itemvalue="Gradle.StateCensusTests.givenWrongFileType_ShouldThrowRunTimeException" />
         <item itemvalue="Gradle.StateCensusTests.givenWrongHeaderInCensusData_ShouldReturnWrongDelimiterException" />
         <item itemvalue="Gradle.StateCensusTests.givenWrongDelimerInCensusData_ShouldReturnWrongDelimiterException" />
-        <item itemvalue="Gradle.StateCensusTests.givenWrongStateCensusName_ShouldThrowNoSuchFileException" />
       </list>
     </recent_temporary>
   </component>
