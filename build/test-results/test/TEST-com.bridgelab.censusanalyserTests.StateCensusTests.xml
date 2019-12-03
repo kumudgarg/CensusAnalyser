@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelab.censusanalyserTests.StateCensusTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-03T05:30:19" hostname="admin105-desktop" time="0.136">
+<testsuite name="com.bridgelab.censusanalyserTests.StateCensusTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-12-03T13:23:33" hostname="admin105-desktop" time="0.109">
   <properties/>
-  <testcase name="givenWrongHeaderInCensusData_ShouldReturnWrongDelimiterException" classname="com.bridgelab.censusanalyserTests.StateCensusTests" time="0.136"/>
-  <system-out><![CDATA[in runtime
-]]></system-out>
-  <system-err><![CDATA[com.bridgelab.censusanalyserTests.CSVUserException: delimeter problem or file type problem or header not found or binding data issue
-	at com.bridgelab.censusanalyserTests.StateCensusAnalyser.commanOpenCsvBuilder(StateCensusAnalyser.java:70)
-	at com.bridgelab.censusanalyserTests.StateCensusAnalyser.checkNumberOfRecords(StateCensusAnalyser.java:28)
-	at com.bridgelab.censusanalyserTests.StateCensusTests.givenWrongHeaderInCensusData_ShouldReturnWrongDelimiterException(StateCensusTests.java:107)
+  <testcase name="givenWrongFileType_ShouldThrowNoSuchFileException" classname="com.bridgelab.censusanalyserTests.StateCensusTests" time="0.109">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at java.base/java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469)
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.base/java.util.TimSort.sort(TimSort.java:234)
+	at java.base/java.util.Arrays.sort(Arrays.java:1515)
+	at java.base/java.util.ArrayList.sort(ArrayList.java:1749)
+	at com.bridgelab.censusanalyserTests.StateCensusAnalyser.sortByState(StateCensusAnalyser.java:73)
+	at com.bridgelab.censusanalyserTests.StateCensusAnalyser.checkNumberOfRecords(StateCensusAnalyser.java:41)
+	at com.bridgelab.censusanalyserTests.StateCensusTests.givenWrongFileType_ShouldThrowNoSuchFileException(StateCensusTests.java:85)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -55,11 +58,8 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.opencsv.exceptions.CsvRequiredFieldEmptyException: Header is missing required fields [POPULATION, STATE]. The list of headers encountered is [Country           -Population-AreaInSqKm-DensityPerSqKm].
-	at com.opencsv.bean.HeaderColumnNameMappingStrategy.captureHeader(HeaderColumnNameMappingStrategy.java:90)
-	at com.opencsv.bean.CsvToBean.prepareToReadInput(CsvToBean.java:493)
-	at com.opencsv.bean.CsvToBean.iterator(CsvToBean.java:514)
-	at com.bridgelab.censusanalyserTests.StateCensusAnalyser.commanOpenCsvBuilder(StateCensusAnalyser.java:61)
-	... 49 more
-]]></system-err>
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

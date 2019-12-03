@@ -84,7 +84,7 @@ public class StateCensusTests {
             StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
             int checkNumberOfRecords = stateCensusAnalyser.checkNumberOfRecords("/home/admin105/Desktop/CensusAnalyser/src/main/resources/StateCode.csv", CsvStateCensus.class);
         } catch (CSVUserException e) {
-            Assert.assertEquals("delimeter problem or file type problem or header not found or binding data issue", e.getMessage());
+            Assert.assertEquals("Such type file doesn't exist", e.getMessage());
             e.printStackTrace();
         }
     }

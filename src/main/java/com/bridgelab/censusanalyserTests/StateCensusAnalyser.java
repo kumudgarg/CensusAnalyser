@@ -1,5 +1,6 @@
 package com.bridgelab.censusanalyserTests;
 
+import com.google.gson.Gson;
 import com.opencsv.CSVReader;
 import com.opencsv.bean.CsvBindAndSplitByName;
 import com.opencsv.bean.CsvToBean;
@@ -7,39 +8,44 @@ import com.opencsv.bean.CsvToBeanBuilder;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Paths;
-import java.util.Iterator;
+import java.util.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class StateCensusAnalyser {
-    String STATE_CODE_CSV_FILE_PATH, STATE_CENSUS_CSV_FILE_PATH;
 
     public StateCensusAnalyser() {
 
     }
 
-    int count = 0;
-
     public <T> int checkNumberOfRecords(String filePathName, T ClassName) throws CSVUserException {
+        int count = 0;
+        List<T> censusDataList = new ArrayList<T>();
         try {
             Iterator csvIterator = commanOpenCsvBuilder(filePathName, (Class) ClassName);
             while (csvIterator.hasNext()) {
-                T csv = (T) csvIterator.next();
+                T csvObj = (T) csvIterator.next();
+                censusDataList.add(csvObj);
                 count += 1;
             }
-        } catch (CSVUserException e) {
+            sortByState(censusDataList);
+            sortedCensusDataIntoJson(censusDataList);
+
+        } catch (CSVUserException | IOException e) {
             e.printStackTrace();
         }
         return count;
     }
 
     public <T> Iterator<T> commanOpenCsvBuilder(String filePathName, T className) throws CSVUserException {
-        Reader reader = null;
         try {
-            reader = Files.newBufferedReader(Paths.get(filePathName));
+            Reader reader = Files.newBufferedReader(Paths.get(filePathName));
             CsvToBean csvToBean = new CsvToBeanBuilder(reader)
                     .withType((Class) className)
                     .withIgnoreLeadingWhiteSpace(true)
@@ -57,4 +63,20 @@ public class StateCensusAnalyser {
         }
         return null;
     }
+
+    public void sortByState(List unsortCensusDataList) {
+        unsortCensusDataList.sort(Comparator.comparing(CsvStateCensus::getState));
+    }
+
+    public void sortedCensusDataIntoJson(List sortedCensusDataList) throws IOException {
+        Gson gson = new Gson();
+        String json = gson.toJson(sortedCensusDataList);
+        FileWriter writer = new FileWriter("/home/admin105/Desktop/CensusAnalyser/src/main/resources/sortedCensusData.json");
+        writer.write(json);
+        writer.close();
+
+    }
+
 }
+
+
