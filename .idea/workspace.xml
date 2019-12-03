@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81781555-31bf-4f56-80b9-c7aef4252e84" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/bridgelab/censusanalyserTests/StateCensusData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/sortedCensusData.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/bridgelab/censusanalyserTests/StateCensusData.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/sortedCensusData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
