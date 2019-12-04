@@ -36,7 +36,8 @@ public class StateCensusAnalyser {
             }
            // sortByStatePopulation(censusDataList);
             //sortByState(censusDataList);
-            sortByStatePopulationDensity(censusDataList);
+           // sortByStatePopulationDensity(censusDataList);
+            sortByStateArea(censusDataList);
             sortedCensusDataIntoJson(censusDataList);
 
         } catch (CSVUserException | IOException e) {
@@ -85,6 +86,10 @@ public class StateCensusAnalyser {
 
     public void sortByStatePopulationDensity(List unsortCensusDataList) {
         unsortCensusDataList.sort(Comparator.comparing(CsvStateCensus::getDensityPerSqKm).reversed());
+    }
+
+    public void sortByStateArea(List unsortCensusDataList) {
+        unsortCensusDataList.sort(Comparator.comparing(CsvStateCensus::getAreaInSqKm).reversed());
     }
 
 
