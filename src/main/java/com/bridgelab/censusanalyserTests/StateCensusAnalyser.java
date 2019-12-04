@@ -23,7 +23,7 @@ public class StateCensusAnalyser {
     public StateCensusAnalyser() {
 
     }
-
+    CsvStateCensus csvStateCensus = new CsvStateCensus();
     public <T> int checkNumberOfRecords(String filePathName, T ClassName) throws CSVUserException {
         int count = 0;
         List<T> censusDataList = new ArrayList<T>();
@@ -65,8 +65,8 @@ public class StateCensusAnalyser {
         return null;
     }
 
-    public void sortByState(List unsortCensusDataList) {
-        unsortCensusDataList.sort(Comparator.comparing(CsvStateCensus::getPopulation));
+    public <T> void sortByState(List unsortCensusDataList) {
+        unsortCensusDataList.sort(Comparator.comparing(CsvStateCensus::getState));
     }
 
     public void sortedCensusDataIntoJson(List sortedCensusDataList) throws IOException {
